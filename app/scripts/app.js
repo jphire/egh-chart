@@ -20,10 +20,6 @@ var greenhouseApp = angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/chart', {
-        templateUrl: 'views/chart.html',
-        controller: 'ChartCtrl'
-      })
       .when('/channels', {
         templateUrl: 'views/channels.html',
         controller: 'ChannelsCtrl'
@@ -33,6 +29,6 @@ var greenhouseApp = angular
         controller: 'ChannelCtrl'
       })
       .otherwise({
-        redirectTo: '/chart'
+        redirectTo: '/channels'
       });
   });

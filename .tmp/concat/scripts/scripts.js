@@ -18,44 +18,15 @@ var greenhouseApp = angular.module('greenhouseApp', [
   ]).config([
     '$routeProvider',
     function ($routeProvider) {
-      $routeProvider.when('/chart', {
-        templateUrl: 'views/chart.html',
-        controller: 'ChartCtrl'
-      }).when('/channels', {
+      $routeProvider.when('/channels', {
         templateUrl: 'views/channels.html',
         controller: 'ChannelsCtrl'
       }).when('/channels/:id', {
         templateUrl: 'views/channel.html',
         controller: 'ChannelCtrl'
-      }).otherwise({ redirectTo: '/chart' });
+      }).otherwise({ redirectTo: '/channels' });
     }
   ]);
-angular.module('greenhouseApp').factory('channel', [
-  '$firebase',
-  function ($firebase) {
-    return {
-      getChannel: function (id) {
-        var ref = new Firebase('https://greenhouse.firebaseio.com/channels/' + id);
-        return $firebase(ref);
-      },
-      getChannelData: function (id) {
-        var ref = new Firebase('https://greenhouse.firebaseio.com/channels/' + id + '/data');
-        var data = [];
-        ref.on('value', function (child) {
-          data = child.val();
-        });
-        return data;
-      }
-    };
-  }
-]);
-angular.module('greenhouseApp').factory('channels', [
-  '$firebase',
-  function ($firebase) {
-    var ref = new Firebase('https://greenhouse.firebaseio.com/channels');
-    return $firebase(ref);
-  }
-]);
 'use strict';
 /**
  * @ngdoc function
@@ -70,24 +41,7 @@ angular.module('greenhouseApp').controller('ChartCtrl', [
   '$http',
   function ($scope, $routeParams, $http) {
     var trunksRef = new Firebase('https://greenhouse.firebaseio.com/channels/');
-    var curTime = Date.parse(new Date());
-    var curValue = 20;
     console.log(trunksRef);
-    trunksRef.on('value', function (snapshot) {
-      console.log(snapshot.val());
-      $scope.data = snapshot.val();  // $scope.channels = $firebase(snapshot.val());
-                                     // for(var i in snapshot.val()) {
-                                     //    $scope.data[i] = snapshot.val()[i];
-                                     //    console.log(snapshot.val()[i])
-                                     //  }
-                                     // $('#chart1').highcharts().get('test').addPoint(snapshot.val());
-                                     // });
-                                     // setInterval(function(){
-                                     //  curTime = curTime + 4000;
-                                     //  curValue = Math.floor(Math.random()*200);
-                                     //  ref.push([curTime, curValue]);
-                                     // }, 4000);
-    });
     $('#chart1').highcharts('StockChart', { series: [] });
   }
 ]);
@@ -104,40 +58,21 @@ angular.module('greenhouseApp').controller('ChannelsCtrl', [
   '$routeParams',
   '$http',
   '$location',
-  'channels',
-  function ($scope, $routeParams, $http, $location, channels) {
-    var curTime = Date.parse(new Date());
-    var curValue = 20;
-    $scope.channels = channels;
+  '$firebase',
+  function ($scope, $routeParams, $http, $location, $firebase) {
+    var ref = new Firebase('https://greenhouse.firebaseio.com/channels');
+    $scope.channels = $firebase(ref);
     $scope.appUrl = $location.$$host + ':' + $location.$$port;
     $scope.addChannel = function () {
       var data = $scope.fields;
-      var url = 'https://greenhouse.firebaseio.com/channels.json';
-      console.log(data);
-      $http({
-        url: url,
-        method: 'POST',
-        data: JSON.stringify(data),
-        headers: { 'Content-Type': 'application/json' }
-      }).success(function (data, status, headers, config) {
-        var values_obj = [{
-              id: data.name,
-              data: [[
-                  curTime,
-                  34
-                ]]
-            }];
-        var url = 'https://greenhouse.firebaseio.com/channels/' + data.name + '/data.json';
-        console.log('Success', values_obj);
-        $http({
-          url: url,
-          method: 'PUT',
-          data: JSON.stringify(values_obj),
-          headers: { 'Content-Type': 'application/json' }
-        }).success(function (data, status, headers, config) {
-          console.log('Success', data);
-        });
-      });
+      var newChannelRef = ref.push(data);
+      var id = newChannelRef.path.n[1];
+      var values_obj = [{
+            id: id,
+            data: []
+          }];
+      var childData = newChannelRef.child('data');
+      childData.set(values_obj);
     };
   }
 ]);
@@ -173,7 +108,7 @@ angular.module('greenhouseApp').controller('ChannelCtrl', [
     });
     $scope.parseDate = function (date) {
       var d = new Date(date);
-      return d.getDate() + '.' + d.getMonth() + '.' + d.getFullYear() + ' ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
+      return d.getDate() + '.' + (d.getMonth() + 1) + '.' + d.getFullYear() + ' ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
     };
     $scope.addData = function () {
       if ($scope.fields && $scope.fields.value) {

@@ -8,13 +8,12 @@
  * Controller of the greenhouseApp
  */
 angular.module('greenhouseApp')
-  .controller('ChannelsCtrl', ['$scope', '$routeParams', '$http', 'channels', function ($scope, $routeParams, $http, channels) {
+  .controller('ChannelsCtrl', ['$scope', '$routeParams', '$http', '$location', 'channels', function ($scope, $routeParams, $http, $location, channels) {
     var curTime = Date.parse(new Date());
     var curValue = 20;
-    $scope.appUrl = appUrl;
     $scope.channels = channels;
-    console.log($scope.channels);
-    
+    $scope.appUrl = $location.$$host + ':' + $location.$$port;
+
     $scope.addChannel = function() {
         var data = $scope.fields;
         var url = 'https://greenhouse.firebaseio.com/channels.json';

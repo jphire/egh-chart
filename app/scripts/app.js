@@ -8,7 +8,7 @@
  *
  * Main module of the application.
  */
-angular
+var greenhouseApp = angular
   .module('greenhouseApp', [
     'ngAnimate',
     'ngCookies',
@@ -16,8 +16,7 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'firebase',
-    'highcharts-ng'
+    'firebase'
   ])
   .config(function ($routeProvider) {
     $routeProvider

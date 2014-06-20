@@ -59,6 +59,16 @@ body {
   margin-top: 28px;
 }
 
+nav.bg-green {
+  border: 1px solid #4CBB17;
+  background-color: #4CBB17;
+  color: white;
+}
+
+
+.bg-green .navbar-brand, .bg-green .navbar-nav > li > a {
+  color: #fff;
+}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */

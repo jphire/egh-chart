@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-md-2 well">
+  <div class="col-md-2 well well-sm">
 	  <h4>Add channels</h4>
 	  <form role="form" name="new-user" ng-submit="addChannel()">
 	  	<div class="form-group">
@@ -22,19 +22,21 @@
 			<h2>Channels</h2>
 		</div>
 		<div class="col-md-12" ng-repeat="(key, channel) in channels">
-	    <a ng-href="http://{{appUrl}}#/channels/{{key}}">
-	    	<div class="col-md-12 well">
-		      <div class="col-md-4">
-		      	Name: {{channel.name}}
-		      </div>
-		      <div class="col-md-4">
-		      	Type: {{channel.type}}
-		      </div>
-		      <div class="col-md-4">
-		      	Decription: {{channel.description}}
-		      </div>
-	    	</div>
-	    </a>
-		</div>
+    	<div class="col-md-12 well well-sm">
+	      <div class="col-md-12">
+    			<a ng-href="http://{{appUrl}}#/channels/{{key}}">
+	      		<h4>{{channel.name}}</h4>
+	      	</a>
+	      </div>
+	      <div class="col-md-4">
+	      	<small>Type</small>
+	      	<p>{{channel.type}}</p>
+	      </div>
+	      <div class="col-md-5">
+	      	<small>Decription</small>
+	      	<p>{{channel.description}}</p>
+	      </div>
+    	</div>
+	  </div>
 	</div>
 </div>

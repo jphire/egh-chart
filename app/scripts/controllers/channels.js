@@ -2,10 +2,10 @@
 
 /**
  * @ngdoc function
- * @name greenhouseApp.controller:MainCtrl
+ * @name greenhouseApp.controller:ChannelsCtrl
  * @description
- * # MainCtrl
- * Controller of the greenhouseApp
+ * # ChannelsCtrl
+ * Controller of the greenhouseApp channels
  */
 angular.module('greenhouseApp')
   .controller('ChannelsCtrl', ['$scope', '$routeParams', '$http', '$location', '$firebase', function ($scope, $routeParams, $http, $location, $firebase) {

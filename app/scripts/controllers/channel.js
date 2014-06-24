@@ -5,11 +5,13 @@
  * @name greenhouseApp.controller:ChannelCtrl
  * @description
  * # ChannelCtrl
- * Controller of the greenhouseApp
+ * Controller of the greenhouseApp channel
  */
 angular.module('greenhouseApp')
   .controller('ChannelCtrl', ['$scope', '$routeParams', '$http', '$firebase', function ($scope, $routeParams, $http, $firebase) {
     $scope.id = $routeParams['id'];
+
+    // create a reference to the first data series that is saved. TODO: add support for multiple series.
     var ref = new Firebase("https://greenhouse.firebaseio.com/channels/" + $scope.id + '/data/0/data');
     $scope.data = $firebase(ref);
 

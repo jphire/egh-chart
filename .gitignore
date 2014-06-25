@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 arduino_secret
-=======
+
 # Logs
 logs
 *.log
@@ -25,5 +25,4 @@ build/Release
 # Dependency directory
 # Deployed apps should consider commenting this line out:
 # see https://npmjs.org/doc/faq.html#Should-I-check-my-node_modules-folder-into-git
-node_modules
->>>>>>> 8b362a266a0e557225204eeb4d44caf5b2b6a439
+# node_modules

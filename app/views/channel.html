@@ -1,7 +1,9 @@
 <div class="row">
   <div class="col-md-12">
 		<div class="col-md-12">
-			<h3>Channel: {{id}}</h3>
+			<h3>Channel: {{channel.id}}</h3>
+			<h5>Type: <i>{{channel.type}}</i></h5>
+			<h5>Description: <i>{{channel.description}}<i></h5>
 			<h5>example push data uri: <small>http://exactumgh.herokuapp.com/index.php?id={{id}}&time=1403295635000&value=34.2<small></h5>
 		</div>
 		<div class="col-md-1">
@@ -18,9 +20,9 @@
 		</div>	
 	  <div class="col-md-3">
 	    <h3>values <button class="btn btn-danger btn-sm" ng-click="removeData()">remove all</button></h3>
-			<div class="col-md-12" ng-repeat="(key, value) in data">
-	    	<small>{{parseDate(value[0])}}:</small> <small class="pull-right">{{value[1]}}</small>
-	    </div>
+			<div class="col-md-12" ng-repeat="(key, value) in data | orderByPriority | reverse">
+				<small>{{parseDate(value[0])}}:</small> <small class="pull-right">{{value[1]}} {{channel.unit}}</small>
+			</div>
 	  </div>
 	</div>
 </div>

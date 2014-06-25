@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name greenhouseApp.controller:ChannelsCtrl
+ * @name greenhouseApp.controller:MainCtrl
  * @description
- * # ChannelsCtrl
- * Controller of the greenhouseApp channels
+ * # MainCtrl
+ * Controller of the greenhouseApp main page
  */
 angular.module('greenhouseApp')
-  .controller('ChannelsCtrl', ['$scope', '$routeParams', '$http', '$location', '$firebase', function ($scope, $routeParams, $http, $location, $firebase) {
+  .controller('MainCtrl', ['$scope', '$routeParams', '$http', '$location', '$firebase', function ($scope, $routeParams, $http, $location, $firebase) {
     var ref = new Firebase("https://greenhouse.firebaseio.com/channels");
     $scope.channels = $firebase(ref);
     $scope.appUrl = $location.$$host + ':' + $location.$$port;

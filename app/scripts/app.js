@@ -20,15 +20,15 @@ var greenhouseApp = angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/channels', {
-        templateUrl: 'views/channels.html',
-        controller: 'ChannelsCtrl'
+      .when('/main', {
+        templateUrl: 'views/main.html',
+        controller: 'MainCtrl'
       })
       .when('/channels/:id', {
         templateUrl: 'views/channel.html',
         controller: 'ChannelCtrl'
       })
       .otherwise({
-        redirectTo: '/channels'
+        redirectTo: '/main'
       });
   });

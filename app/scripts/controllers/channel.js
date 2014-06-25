@@ -10,21 +10,42 @@
 angular.module('greenhouseApp')
   .controller('ChannelCtrl', ['$scope', '$routeParams', '$http', '$firebase', function ($scope, $routeParams, $http, $firebase) {
     $scope.id = $routeParams['id'];
-
+    
+    var channelRef = new Firebase("https://greenhouse.firebaseio.com/channels/" + $scope.id);
+    $scope.channel = $firebase(channelRef);
     // create a reference to the first data series that is saved. TODO: add support for multiple series.
     var ref = new Firebase("https://greenhouse.firebaseio.com/channels/" + $scope.id + '/data/0/data');
-    $scope.data = $firebase(ref);
+    $scope.data = $firebase(ref.limit(20));
 
-    $('#chart1').highcharts('StockChart', {
-      series: [
-        {
-          id: $scope.id,
-          data: []
-        }
-      ]
+    Highcharts.setOptions({
+      global: {
+        useUTC: false
+      }
     });
 
-    ref.on('child_added', function (child) {
+    ref.once('value', function (value) {
+      var vals = []
+        , c = value.val();
+
+      for (var i in c) {
+        if (c.hasOwnProperty(i)) {
+          vals.push(c[i]);
+        }
+      }
+
+      $('#chart1').highcharts('StockChart', {
+        series: [
+          {
+            id: $scope.id,
+            data: vals
+          }
+        ]
+      });
+    });
+
+    // this function launches child_added events only for new children,
+    // not for all which was inefficient
+    ref.endAt().limit(1).on('child_added', function (child) {
       var time = child.val()[0]
         , val = parseFloat(child.val()[1])
 
@@ -46,10 +67,13 @@ angular.module('greenhouseApp')
     }
 
     $scope.removeData = function() {
-      $('#chart1').highcharts().get($scope.id).setData([]);
-      ref.remove(function (obj) {
-        console.log("done");
-      });
+      var sure = confirm("Are you sure to remove all data?");
+      if (sure) {
+        $('#chart1').highcharts().get($scope.id).setData([]);
+        ref.remove(function (obj) {
+          console.log("done");
+        });
+      }
     }
   }
 ]);

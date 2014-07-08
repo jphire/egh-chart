@@ -1,4 +1,4 @@
 egh-chart
 =========
 
-A real-time visualization app based on Angular and Firebase
+A real-time Internet of Things visualization app based on Angular and Firebase

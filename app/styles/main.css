@@ -87,3 +87,23 @@ nav.bg-green {
     border-bottom: 0;
   }
 }
+
+.signup {
+  margin-top: 10%;
+}
+
+.nav > li > a.profile-img {
+  padding: 10px 10px;
+}
+
+a.footer-link {
+  color: #ccc;
+}
+
+.no-padding: {
+  padding: 0px !important;
+}
+
+.remove-series:hover {
+  cursor: 'pointer';
+}

@@ -8,18 +8,15 @@
  * Controller of the greenhouseApp main page
  */
 angular.module('greenhouseApp')
-  .controller('MainCtrl', ['$scope', '$routeParams', '$http', '$location', '$firebase', function ($scope, $routeParams, $http, $location, $firebase) {
-    var ref = new Firebase("https://greenhouse.firebaseio.com/channels");
+  .controller('MainCtrl', ['$scope', '$stateParams', '$firebase', 'user', function ($scope, $stateParams, $firebase, user) {
+
+    console.log('mainCTRL');
+    var ref = new Firebase("https://greenhouse.firebaseio.com/users/" + $scope.user.id + "/channels");
     $scope.channels = $firebase(ref);
-    $scope.appUrl = $location.$$host + ':' + $location.$$port;
 
     $scope.addChannel = function() {
         var data = $scope.fields;
-        var newChannelRef = ref.push(data);
-        var id = newChannelRef.path.n[1];
-        var values_obj = [{id: id, data: []}];
-        var childData = newChannelRef.child('data');
-        childData.set(values_obj);    
+        var newChannelRef = ref.push(data);    
     }
   }
 ]);

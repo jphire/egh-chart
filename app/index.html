@@ -19,32 +19,12 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-
-    <!-- Add your site or application content here -->
     <div class="container">
-      <div class="">
-        <nav class="navbar navbar-inverse bg-green" role="navigation">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <a class="navbar-brand" href="#">greenhouse <i class="glyphicon glyphicon-leaf glyphicon-white"></i></a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li><a ng-href="#/main">Home</a></li>
-                <li><a href="#"></a></li>
-              </ul>
-              
-            </div><!-- /.navbar-collapse -->
+    <!-- Add your site or application content here -->
+      <div class="col-md-12" ui-view></div>
 
-          </div><!-- /.container-fluid -->
-        </nav>
-      </div>
-      <div class="col-md-12" ng-view=""></div>
-
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> University of Helsinki</p>
+      <div class="col-md-10 col-md-offset-1 footer">
+        <a class="footer-link" href="https://github.com/jphire/egh-chart"><span class="glyphicon glyphicon-fire"></span> Github</a>
       </div>
     </div>
 
@@ -70,6 +50,7 @@
     <script src="bower_components/firebase/firebase.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
@@ -85,6 +66,11 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/filters/reverse.js"></script>
+        <script src="scripts/controllers/root.js"></script>
+        <script src="scripts/controllers/user.js"></script>
+        <script src="scripts/controllers/signup.js"></script>
+        <script src="scripts/controllers/login.js"></script>
+        <script src="scripts/controllers/settings.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/channel.js"></script>
         <!-- endbuild -->

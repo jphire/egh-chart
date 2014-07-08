@@ -1,0 +1,29 @@
+<div class="row">
+  
+	<div class="col-md-8">
+		<div class="col-md-12">
+			<h2>Settings</h2>
+		</div>
+
+		<div class="col-md-6">
+			<h3>Change password</h3>
+			<form role="form" ng-submit="changePassword()">
+				<div class="form-group">
+					<label for="old">Old password</label>
+					<input class="form-control" type="password" ng-model="fields.old">
+				</div>
+				<div class="form-group">
+					<label for="new">New password</label>
+					<input class="form-control" type="password" ng-model="fields.new">
+				</div>
+				<div class="form-group">
+					<label for="new-confirm">Confirm new password</label>
+					<input class="form-control" type="password" ng-model="fields.new_confirm">
+				</div>
+				<div class="form-group">
+					<button class="btn btn-md btn-primary">Change</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

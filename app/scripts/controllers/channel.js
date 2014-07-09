@@ -77,6 +77,7 @@ angular.module('greenhouseApp')
     // listen to every series separately, some limit to series amount should be added
     dataRef.on('child_added', function (value) {
       var series_url = "https://greenhouse.firebaseio.com/users/" + $scope.uid + "/channels/" + $scope.cid + '/data/' + value.name() + '/data';
+      $scope.series_id = value.name();
       series[value.val().id] = new Firebase(series_url);
       
       series[value.val().id].endAt().limit(1).on('child_added', function (child) {
@@ -84,7 +85,7 @@ angular.module('greenhouseApp')
             , val = parseFloat(child.val()[1])
           $('#chart1').highcharts().get(value.val().id).addPoint([time, val]);
       });
-      $scope.data[value.val().id] = {val:$firebase(series[value.val().id].limit(1)), unit: value.val().unit};
+      $scope.data[value.val().id] = {val:$firebase(series[value.val().id].limit(1)), unit:value.val().unit, key:value.name()};
     })
 
     $scope.switchMore = function () {

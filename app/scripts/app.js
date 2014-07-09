@@ -19,7 +19,7 @@ var greenhouseApp = angular
     'ngTouch',
     'firebase'
   ])
-  .config(function ($stateProvider, $urlRouterProvider) {
+  .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise('/login');
 
@@ -28,7 +28,7 @@ var greenhouseApp = angular
         url: "",
         templateUrl: "views/root.html",
         resolve: {
-          user: function ($q, $firebase) {
+          user: ['$q', '$firebase', function ($q, $firebase) {
             var deferred = $q.defer();
             var ref = new Firebase("https://greenhouse.firebaseio.com/");
 
@@ -43,7 +43,7 @@ var greenhouseApp = angular
               }
             });
             return deferred.promise;
-          }
+          }]
         },
         controller: "RootCtrl"
       })
@@ -79,4 +79,4 @@ var greenhouseApp = angular
           controller: 'LoginCtrl'
         })
 
-  });
+  }]);

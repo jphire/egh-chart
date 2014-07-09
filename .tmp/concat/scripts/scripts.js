@@ -25,26 +25,30 @@ var greenhouseApp = angular.module('greenhouseApp', [
         url: '',
         templateUrl: 'views/root.html',
         resolve: {
-          user: function ($q, $firebase) {
-            var deferred = $q.defer();
-            var ref = new Firebase('https://greenhouse.firebaseio.com/');
-            var auth = new FirebaseSimpleLogin(ref, function (error, user) {
-                if (error) {
-                  deferred.resolve(null);
-                }
-                if (user) {
-                  console.log('logged in:', user);
-                  deferred.resolve({
-                    'user': user,
-                    'auth': auth,
-                    'fb': ref
-                  });
-                } else {
-                  deferred.resolve({ 'auth': auth });
-                }
-              });
-            return deferred.promise;
-          }
+          user: [
+            '$q',
+            '$firebase',
+            function ($q, $firebase) {
+              var deferred = $q.defer();
+              var ref = new Firebase('https://greenhouse.firebaseio.com/');
+              var auth = new FirebaseSimpleLogin(ref, function (error, user) {
+                  if (error) {
+                    deferred.resolve(null);
+                  }
+                  if (user) {
+                    console.log('logged in:', user);
+                    deferred.resolve({
+                      'user': user,
+                      'auth': auth,
+                      'fb': ref
+                    });
+                  } else {
+                    deferred.resolve({ 'auth': auth });
+                  }
+                });
+              return deferred.promise;
+            }
+          ]
         },
         controller: 'RootCtrl'
       }).state('index.users', {

@@ -8,15 +8,19 @@
  * Controller of the greenhouseApp main page
  */
 greenhouseApp
-  .controller('RootCtrl', ['$scope', '$rootScope', '$state', 'user',
-              function ($scope, $rootScope, $state, user) {
+  .controller('RootCtrl', ['$scope', '$rootScope', '$state', '$stateParams', 'user',
+              function ($scope, $rootScope, $state, $stateParams, user) {
 
       console.log('rootCTRL', user)
       if (user && user.user) {
         console.log('root.js', user)
         $scope.user = user.user;
         $scope.uid = user.user.id;
+        $rootScope.isAuthenticated = true;
         $scope.isAuthenticated = true;
+        if (Object.keys($stateParams).length == 0) {
+          $state.go('index.users.main', {uid: $scope.uid});
+        }
       } else {
         $state.go('index.login');
       }

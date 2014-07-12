@@ -111,14 +111,19 @@ greenhouseApp.controller('RootCtrl', [
   '$scope',
   '$rootScope',
   '$state',
+  '$stateParams',
   'user',
-  function ($scope, $rootScope, $state, user) {
+  function ($scope, $rootScope, $state, $stateParams, user) {
     console.log('rootCTRL', user);
     if (user && user.user) {
       console.log('root.js', user);
       $scope.user = user.user;
       $scope.uid = user.user.id;
+      $rootScope.isAuthenticated = true;
       $scope.isAuthenticated = true;
+      if (Object.keys($stateParams).length == 0) {
+        $state.go('index.users.main', { uid: $scope.uid });
+      }
     } else {
       $state.go('index.login');
     }
@@ -218,15 +223,28 @@ angular.module('greenhouseApp').controller('LoginCtrl', [
   function ($scope, $rootScope, $state, $firebase, user) {
     console.log('loginCTRL', user);
     var ref = new Firebase('https://greenhouse.firebaseio.com/');
+    $scope.showAlert = false;
     var auth = new FirebaseSimpleLogin(ref, function (error, logged_user) {
         if (error) {
           console.log(error);
+          $scope.$apply(function () {
+            $scope.showAlert = true;
+            $scope.alertClass = 'danger';
+            $scope.alertMessage = 'Login failed.';
+          });
         } else if (logged_user) {
           console.log('login.js:', logged_user);
-          $rootScope.isAuthenticated = true;
-          $rootScope.user = logged_user;
+          $scope.$apply(function () {
+            $scope.showAlert = false;
+            $rootScope.isAuthenticated = true;
+            $rootScope.user = logged_user;
+          });
           $state.go('index');
         } else {
+          // logged out
+          $scope.$apply(function () {
+            $scope.showAlert = false;
+          });
         }
       });
     $scope.loginUser = function () {

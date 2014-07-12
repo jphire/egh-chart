@@ -352,7 +352,7 @@ angular.module('greenhouseApp').controller('ChannelCtrl', [
         rangeSelector: { allButtonsEnabled: true },
         tooltip: {
           formatter: function () {
-            var s = '<b>' + Highcharts.dateFormat('%A, %b %e, %Y', this.x) + '</b>';
+            var s = '<b>' + Highcharts.dateFormat('%A, %b %e, %Y %H:%M:%S', this.x) + '</b>';
             for (var p = 0; p < this.points.length; p++) {
               s += '<br/><b>' + this.points[p].series.name + ':</b> ' + Math.round(this.points[p].y * 100) / 100 + ' ' + this.points[p].series.options.unit;
             }

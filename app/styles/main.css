@@ -107,3 +107,7 @@ a.footer-link {
 .remove-series:hover {
   cursor: 'pointer';
 }
+
+i.show-switch:hover, i.remove-series:hover {
+  cursor: pointer;
+}

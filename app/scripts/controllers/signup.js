@@ -7,6 +7,9 @@
  * # SignupCtrl
  * Controller of the greenhouseApp main page
  */
+
+
+
 angular.module('greenhouseApp')
   .controller('SignupCtrl', ['$scope', '$state', '$firebase', function ($scope, $state, $firebase) {
     var ref = new Firebase("https://greenhouse.firebaseio.com");
@@ -24,13 +27,21 @@ angular.module('greenhouseApp')
       }
     });
 
+
+
+
     $scope.createUser = function() {
       var fields = $scope.fields;
       auth.createUser(fields.email, fields.password, function (error, user) {
         if (!error) {
+          // Everything went ok
           var userRef = new Firebase("https://greenhouse.firebaseio.com/users/" + user.id);
           userRef.set({'id':user.id, 'email': fields.email});
           $state.go('index.login');
+          alert("User account created successfully.");
+        } else {  
+          //not
+          alert("pipi");
         }
       });
     }

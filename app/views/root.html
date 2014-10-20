@@ -3,12 +3,13 @@
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <a class="navbar-brand" ui-sref="index.users.main({uid:user.id})">greenhouse <i class="glyphicon glyphicon-leaf glyphicon-white"></i></a>
+        <a class="navbar-brand" ui-sref="index.users.main({uid:user.id})"><i class="glyphicon glyphicon-leaf glyphicon-white"></i> charts</a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
         <ul ng-if="isAuthenticated" class="nav navbar-nav">
-          <li><a ui-sref="index.users.settings({uid:user.id})"><i class="glyphicon glyphicon-cog"></i></a></li>
+          <li><a ui-sref="index.users.settings({uid:user.id})"></a></li>
         </ul>
         <ul ng-if="isAuthenticated" class="nav navbar-nav navbar-right">
           <li>
@@ -18,9 +19,11 @@
           </li>
           <li><a ng-href="#" ng-click="logout()">Logout</a></li>
         </ul>
+        <!-- Now we haven't logged in yet: Show register -->
         <ul ng-if="!isAuthenticated" class="nav navbar-nav navbar-right">
-          <li><a ui-sref="index.signup">Signup</a></li>
+          <li><a ui-sref="index.signup">Register</a></li>
         </ul>
+
       </div><!-- /.navbar-collapse -->
 
     </div><!-- /.container-fluid -->

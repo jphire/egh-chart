@@ -2,9 +2,11 @@
   <div class="col-md-12">
 		<h3>Channel: {{channel.name}} <i class="show-switch glyphicon glyphicon-chevron-{{updown}}" ng-click="switchMore()"></i></h3>
 		<div ng-show="showMore" class="col-md-12">
-			<h5>Type: <i>{{channel.type}}</i></h5>
-			<h5>Description: <i>{{channel.description}}<i></h5>
-			<h5>example push data uri: <small>http://exactumgh.herokuapp.com/index.php?user={{user.id}}&channel={{cid}}&series={{series_id}}&value=34.2<small></h5>
+
+				<h5>Type: <i>{{channel.type}}</i></h5>
+				<h5>Description: <i>{{channel.description}}<i></h5>
+				<h5>example push data uri: <small>http://exactumgh.herokuapp.com/index.php?user={{user.id}}&channel={{cid}}&series={{series_id}}&value=34.2<small></h5>
+
 			<form class="form-horizontal" role="form" name="new-data" ng-submit="addSeries()">
 		  	<div class="col-md-3 form-group">
 		  		<label for="data-id">Name</label>
@@ -22,15 +24,20 @@
 		</div>
 		<div class="col-md-2">
 		  	<div class="row" ng-repeat="(name, vals) in data">
-	  			<h5>{{name}}
-						<i class="glyphicon glyphicon-remove pull-right remove-series" title="remove series" ng-click="removeSeries(name)"></i>
-					</h5>
-					<p>Id: {{vals.key}}</p>
 					<div class="col-md-12" style="padding:0px;" ng-repeat="(key, value) in vals.val | orderByPriority | reverse">
-						<b class="">{{parseDate(value[0])}}:</b>
-						<small class="pull-right">{{roundVal(value[1])}} {{vals.unit}}</small>
+						<h5>{{name}}
+						<i class="glyphicon glyphicon-remove pull-right remove-series" title="remove series" ng-click="removeSeries(name)"></i>
+						<p class="">{{roundVal(value[1])}} {{vals.unit}}</p>
+						<small>Last updated:<br>{{parseDate(value[0])}}:Id:
+						<br>{{vals.key}} </small>	
+
+					</h5>
+						<p class="">
+
+						
 					</div>
-				</div>
+					
+			</div>
 		</div>
 	</div>
 </div>

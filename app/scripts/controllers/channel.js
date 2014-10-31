@@ -116,7 +116,7 @@ angular.module('greenhouseApp')
           $('#chart1').highcharts().get(name).remove();
         }
         delete $scope.data[name];
-        <!-- Should delete all data, now the channel remains as a ghost --> 
+        // Should delete all data, now the channel remains as a ghost
         
         series[name].parent().remove(function (obj) {
           console.log("done");

@@ -195,12 +195,17 @@ angular.module('greenhouseApp').controller('SignupCtrl', [
       var fields = $scope.fields;
       auth.createUser(fields.email, fields.password, function (error, user) {
         if (!error) {
+          // Everything went ok
           var userRef = new Firebase('https://greenhouse.firebaseio.com/users/' + user.id);
           userRef.set({
             'id': user.id,
             'email': fields.email
           });
           $state.go('index.login');
+          alert('User account created successfully.');
+        } else {
+          //not
+          alert('pipi');
         }
       });
     };
@@ -427,6 +432,7 @@ angular.module('greenhouseApp').controller('ChannelCtrl', [
           $('#chart1').highcharts().get(name).remove();
         }
         delete $scope.data[name];
+        // Should delete all data, now the channel remains as a ghost
         series[name].parent().remove(function (obj) {
           console.log('done');
         });

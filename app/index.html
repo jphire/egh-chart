@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="styles/bootstrap.css" />
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
   </head>
   <body ng-app="greenhouseApp">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="container">
+    <div class="">
     <!-- Add your site or application content here -->
       <div class="col-md-12" ui-view></div>
 
@@ -60,7 +61,15 @@
     <script src="bower_components/firebase-simple-login/firebase-simple-login.js"></script>
     <script src="bower_components/angularfire/angularfire.js"></script>
     <!-- endbower -->
-    <script src="bower_components/highcharts/highstock.js"></script>
+     <script src="bower_components/highcharts/highstock.js"></script>
+     <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+       <!--  <script src="bower_components/highcharts/highmaps.js"></script>-->
+    
+    <!-- <script src="http://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="http://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="http://code.highcharts.com/mapdata/countries/us/us-all.js"></script>
+    -->
+
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
@@ -73,6 +82,7 @@
         <script src="scripts/controllers/settings.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/channel.js"></script>
+        <script src="scripts/controllers/map.js"></script>
         <!-- endbuild -->
 </body>
 </html>

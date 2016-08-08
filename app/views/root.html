@@ -11,7 +11,12 @@
         <ul ng-if="isAuthenticated" class="nav navbar-nav">
           <li><a ui-sref="index.users.settings({uid:user.id})"></a></li>
         </ul>
-        <ul ng-if="isAuthenticated" class="nav navbar-nav navbar-right">
+        <ul ng-if="isAuthenticated" class="nav navbar-nav navbar-left">
+          <li>
+            <a class="pull-left" ui-sref="index.users.maps({uid:user.id})"> maps</a>
+          </li>
+        </ul>
+        <ul ng-if="isAuthenticated" class="nav navbar-nav navbar-right">  
           <li>
             <a class="profile-img" ui-sref="index.users.settings({uid:user.id})">
               <img ng-src="http://www.gravatar.com/avatar/{{user.md5_hash}}?s=30"/>

@@ -1,6 +1,6 @@
 {
   "name": "greenhouse",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "dependencies": {
     "firebase": "latest",
     "angular": "1.2.16",

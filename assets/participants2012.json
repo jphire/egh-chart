@@ -1,0 +1,1552 @@
+[
+  {
+    "response_id":332,
+    "longitude":-121.856796,
+    "latitude":37.307301,
+    "city":"San Jose",
+    "country":"United States",
+    "state":"CA",
+    "zip_code":95101,
+    "dataid":121
+  },
+  {
+    "response_id":334,
+    "longitude":-121.856796,
+    "latitude":37.307301,
+    "city":"San Jose",
+    "country":"United States",
+    "state":"CA",
+    "zip_code":95101,
+    "dataid":6121
+  },
+  {
+    "response_id":315,
+    "longitude":-121.966003,
+    "latitude":37.364899,
+    "city":"Santa Clara",
+    "country":"United States",
+    "state":"CA",
+    "zip_code":95050,
+    "dataid":7989
+  },
+  {
+    "response_id":345,
+    "longitude":-122.073196,
+    "latitude":37.3974,
+    "city":"Mountain View",
+    "country":"United States",
+    "state":"CA",
+    "zip_code":94035,
+    "dataid":1800
+  },
+  {
+    "response_id":467,
+    "longitude":-122.429398,
+    "latitude":37.7645,
+    "city":"San Francisco",
+    "country":"United States",
+    "state":"CA",
+    "zip_code":94101,
+    "dataid":7800
+  },
+  {
+    "response_id":411,
+    "longitude":-122.680199,
+    "latitude":45.517101,
+    "city":"Portland",
+    "country":"United States",
+    "state":"OR",
+    "zip_code":97205,
+    "dataid":5210
+  },
+  {
+    "response_id":321,
+    "longitude":-71.330704,
+    "latitude":42.116199,
+    "city":"Norfolk",
+    "country":"United States",
+    "state":"MA",
+    "zip_code":2056,
+    "dataid":2156
+  },
+  {
+    "response_id":355,
+    "longitude":-73.264503,
+    "latitude":41.185398,
+    "city":"Fairfield",
+    "country":"United States",
+    "state":"CT",
+    "zip_code":6824,
+    "dataid":8719
+  },
+  {
+    "response_id":374,
+    "longitude":-73.976303,
+    "latitude":40.761902,
+    "city":"New York",
+    "country":"United States",
+    "state":"NY",
+    "zip_code":10001,
+    "dataid":2365
+  },
+  {
+    "response_id":375,
+    "longitude":-84.386497,
+    "latitude":33.8004,
+    "city":"Atlanta",
+    "country":"United States",
+    "state":"GA",
+    "zip_code":30301,
+    "dataid":2129
+  },
+  {
+    "response_id":400,
+    "longitude":-87.6744,
+    "latitude":41.8675,
+    "city":"Chicago",
+    "country":"United States",
+    "state":"IL",
+    "zip_code":60601,
+    "dataid":6673
+  },
+  {
+    "response_id":449,
+    "longitude":-87.844498,
+    "latitude":42.119701,
+    "city":"Northbrook",
+    "country":"United States",
+    "state":"IL",
+    "zip_code":60062,
+    "dataid":4135
+  },
+  {
+    "response_id":402,
+    "longitude":9,
+    "latitude":51,
+    "city":"",
+    "country":"Germany",
+    "state":"",
+    "zip_code":null,
+    "dataid":7741
+  },
+  {
+    "response_id":370,
+    "longitude":-91.097801,
+    "latitude":30.4499,
+    "city":"Baton Rouge",
+    "country":"United States",
+    "state":"LA",
+    "zip_code":70801,
+    "dataid":6578
+  },
+  {
+    "response_id":491,
+    "longitude":-93.783501,
+    "latitude":32.4492,
+    "city":"Shreveport",
+    "country":"United States",
+    "state":"LA",
+    "zip_code":71101,
+    "dataid":9875
+  },
+  {
+    "response_id":372,
+    "longitude":-95.936401,
+    "latitude":36.135201,
+    "city":"Tulsa",
+    "country":"United States",
+    "state":"OK",
+    "zip_code":74101,
+    "dataid":9930
+  },
+  {
+    "response_id":495,
+    "longitude":-97,
+    "latitude":38,
+    "city":"",
+    "country":"United States",
+    "state":"",
+    "zip_code":null,
+    "dataid":9499
+  },
+  {
+    "response_id":376,
+    "longitude":-97.327499,
+    "latitude":30.1406,
+    "city":"Bastrop",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78602,
+    "dataid":5810
+  },
+  {
+    "response_id":380,
+    "longitude":-97.518997,
+    "latitude":35.4715,
+    "city":"Oklahoma City",
+    "country":"United States",
+    "state":"OK",
+    "zip_code":73101,
+    "dataid":3146
+  },
+  {
+    "response_id":463,
+    "longitude":-97.552002,
+    "latitude":30.5543,
+    "city":"Hutto",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78634,
+    "dataid":2158
+  },
+  {
+    "response_id":492,
+    "longitude":-97.582802,
+    "latitude":30.6535,
+    "city":"Georgetown",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78626,
+    "dataid":1589
+  },
+  {
+    "response_id":323,
+    "longitude":-97.598602,
+    "latitude":30.441601,
+    "city":"Pflugerville",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78660,
+    "dataid":4297
+  },
+  {
+    "response_id":419,
+    "longitude":-97.679497,
+    "latitude":30.524799,
+    "city":"Round Rock",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78664,
+    "dataid":6576
+  },
+  {
+    "response_id":318,
+    "longitude":-97.679497,
+    "latitude":30.524799,
+    "city":"Round Rock",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78664,
+    "dataid":2859
+  },
+  {
+    "response_id":454,
+    "longitude":-97.679497,
+    "latitude":30.524799,
+    "city":"Round Rock",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78664,
+    "dataid":8292
+  },
+  {
+    "response_id":483,
+    "longitude":-97.685699,
+    "latitude":30.304199,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78723,
+    "dataid":4671
+  },
+  {
+    "response_id":462,
+    "longitude":-97.707298,
+    "latitude":30.384001,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78758,
+    "dataid":1714
+  },
+  {
+    "response_id":451,
+    "longitude":-97.709702,
+    "latitude":30.2941,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78722,
+    "dataid":624
+  },
+  {
+    "response_id":356,
+    "longitude":-97.713799,
+    "latitude":30.264299,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78702,
+    "dataid":2953
+  },
+  {
+    "response_id":443,
+    "longitude":-97.722702,
+    "latitude":30.3106,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78751,
+    "dataid":1953
+  },
+  {
+    "response_id":399,
+    "longitude":-97.734398,
+    "latitude":30.354401,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78757,
+    "dataid":4922
+  },
+  {
+    "response_id":500,
+    "longitude":-97.7369,
+    "latitude":30.296101,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78705,
+    "dataid":5814
+  },
+  {
+    "response_id":342,
+    "longitude":-97.7369,
+    "latitude":30.296101,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78705,
+    "dataid":9934
+  },
+  {
+    "response_id":455,
+    "longitude":-97.7369,
+    "latitude":30.296101,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78705,
+    "dataid":9052
+  },
+  {
+    "response_id":313,
+    "longitude":-97.7369,
+    "latitude":30.296101,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78705,
+    "dataid":6836
+  },
+  {
+    "response_id":444,
+    "longitude":-97.7369,
+    "latitude":30.296101,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78705,
+    "dataid":9701
+  },
+  {
+    "response_id":348,
+    "longitude":-97.7369,
+    "latitude":30.296101,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78705,
+    "dataid":6139
+  },
+  {
+    "response_id":416,
+    "longitude":-97.742599,
+    "latitude":30.267799,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78701,
+    "dataid":7057
+  },
+  {
+    "response_id":389,
+    "longitude":-97.742599,
+    "latitude":30.267799,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78701,
+    "dataid":4336
+  },
+  {
+    "response_id":436,
+    "longitude":-97.7528,
+    "latitude":30.4,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78759,
+    "dataid":9932
+  },
+  {
+    "response_id":433,
+    "longitude":-97.7528,
+    "latitude":30.4,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78759,
+    "dataid":3504
+  },
+  {
+    "response_id":429,
+    "longitude":-97.7565,
+    "latitude":30.454901,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78729,
+    "dataid":7319
+  },
+  {
+    "response_id":358,
+    "longitude":-97.766296,
+    "latitude":30.2966,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78703,
+    "dataid":1464
+  },
+  {
+    "response_id":459,
+    "longitude":-97.766296,
+    "latitude":30.2966,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78703,
+    "dataid":2094
+  },
+  {
+    "response_id":388,
+    "longitude":-97.766296,
+    "latitude":30.2966,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78703,
+    "dataid":4421
+  },
+  {
+    "response_id":473,
+    "longitude":-97.766296,
+    "latitude":30.2966,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78703,
+    "dataid":8142
+  },
+  {
+    "response_id":309,
+    "longitude":-97.7687,
+    "latitude":30.2414,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78704,
+    "dataid":3527
+  },
+  {
+    "response_id":499,
+    "longitude":-97.7687,
+    "latitude":30.2414,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78704,
+    "dataid":9921
+  },
+  {
+    "response_id":478,
+    "longitude":-97.7687,
+    "latitude":30.2414,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78704,
+    "dataid":900
+  },
+  {
+    "response_id":343,
+    "longitude":-97.7687,
+    "latitude":30.2414,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78704,
+    "dataid":9639
+  },
+  {
+    "response_id":314,
+    "longitude":-97.7687,
+    "latitude":30.2414,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78704,
+    "dataid":9942
+  },
+  {
+    "response_id":320,
+    "longitude":-97.7687,
+    "latitude":30.2414,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78704,
+    "dataid":6412
+  },
+  {
+    "response_id":377,
+    "longitude":-97.7687,
+    "latitude":30.2414,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78704,
+    "dataid":9922
+  },
+  {
+    "response_id":456,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":94
+  },
+  {
+    "response_id":458,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":9343
+  },
+  {
+    "response_id":460,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":2641
+  },
+  {
+    "response_id":464,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":9971
+  },
+  {
+    "response_id":414,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":1050
+  },
+  {
+    "response_id":466,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":2986
+  },
+  {
+    "response_id":471,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":9160
+  },
+  {
+    "response_id":472,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":2171
+  },
+  {
+    "response_id":476,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":7769
+  },
+  {
+    "response_id":475,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":5439
+  },
+  {
+    "response_id":482,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":5403
+  },
+  {
+    "response_id":427,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":5545
+  },
+  {
+    "response_id":487,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":6941
+  },
+  {
+    "response_id":490,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":4373
+  },
+  {
+    "response_id":489,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":9609
+  },
+  {
+    "response_id":494,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":3134
+  },
+  {
+    "response_id":497,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":4298
+  },
+  {
+    "response_id":496,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":4302
+  },
+  {
+    "response_id":360,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":null
+  },
+  {
+    "response_id":378,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":2829
+  },
+  {
+    "response_id":469,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":4228
+  },
+  {
+    "response_id":384,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":936
+  },
+  {
+    "response_id":479,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":3778
+  },
+  {
+    "response_id":397,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":3723
+  },
+  {
+    "response_id":434,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":4505
+  },
+  {
+    "response_id":465,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":5796
+  },
+  {
+    "response_id":485,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":1642
+  },
+  {
+    "response_id":477,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":7731
+  },
+  {
+    "response_id":322,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":6524
+  },
+  {
+    "response_id":312,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":4395
+  },
+  {
+    "response_id":317,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":739
+  },
+  {
+    "response_id":410,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":6730
+  },
+  {
+    "response_id":316,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":1103
+  },
+  {
+    "response_id":319,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":6636
+  },
+  {
+    "response_id":325,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":3456
+  },
+  {
+    "response_id":493,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":871
+  },
+  {
+    "response_id":327,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":5874
+  },
+  {
+    "response_id":353,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":8872
+  },
+  {
+    "response_id":390,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":4251
+  },
+  {
+    "response_id":335,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":2769
+  },
+  {
+    "response_id":338,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":4743
+  },
+  {
+    "response_id":339,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":4590
+  },
+  {
+    "response_id":448,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":410
+  },
+  {
+    "response_id":481,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":1790
+  },
+  {
+    "response_id":405,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":9917
+  },
+  {
+    "response_id":350,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":1796
+  },
+  {
+    "response_id":352,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":3570
+  },
+  {
+    "response_id":330,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":1169
+  },
+  {
+    "response_id":333,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":4352
+  },
+  {
+    "response_id":357,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":4031
+  },
+  {
+    "response_id":336,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":6101
+  },
+  {
+    "response_id":359,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":2653
+  },
+  {
+    "response_id":362,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":7900
+  },
+  {
+    "response_id":368,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":9578
+  },
+  {
+    "response_id":369,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":2575
+  },
+  {
+    "response_id":344,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":2742
+  },
+  {
+    "response_id":367,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78768,
+    "dataid":3544
+  },
+  {
+    "response_id":354,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":8317
+  },
+  {
+    "response_id":371,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":8084
+  },
+  {
+    "response_id":381,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":9654
+  },
+  {
+    "response_id":383,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":6692
+  },
+  {
+    "response_id":382,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":114
+  },
+  {
+    "response_id":351,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":585
+  },
+  {
+    "response_id":349,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":2461
+  },
+  {
+    "response_id":394,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":6072
+  },
+  {
+    "response_id":396,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":991
+  },
+  {
+    "response_id":401,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":5218
+  },
+  {
+    "response_id":406,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":3935
+  },
+  {
+    "response_id":408,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":5746
+  },
+  {
+    "response_id":486,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":5949
+  },
+  {
+    "response_id":409,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":9019
+  },
+  {
+    "response_id":420,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":7940
+  },
+  {
+    "response_id":386,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":7560
+  },
+  {
+    "response_id":415,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":7390
+  },
+  {
+    "response_id":418,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":8626
+  },
+  {
+    "response_id":423,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":2864
+  },
+  {
+    "response_id":431,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":3482
+  },
+  {
+    "response_id":432,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":7429
+  },
+  {
+    "response_id":441,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":484
+  },
+  {
+    "response_id":412,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":5921
+  },
+  {
+    "response_id":442,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":946
+  },
+  {
+    "response_id":488,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":2814
+  },
+  {
+    "response_id":422,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":5817
+  },
+  {
+    "response_id":474,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":5246
+  },
+  {
+    "response_id":457,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":8600
+  },
+  {
+    "response_id":446,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":2638
+  },
+  {
+    "response_id":340,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":8669
+  },
+  {
+    "response_id":438,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":9248
+  },
+  {
+    "response_id":480,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":5677
+  },
+  {
+    "response_id":428,
+    "longitude":-97.7696,
+    "latitude":30.303699,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":73301,
+    "dataid":4998
+  },
+  {
+    "response_id":426,
+    "longitude":-97.770699,
+    "latitude":30.3389,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78731,
+    "dataid":4874
+  },
+  {
+    "response_id":484,
+    "longitude":-97.800201,
+    "latitude":30.205799,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78745,
+    "dataid":1600
+  },
+  {
+    "response_id":331,
+    "longitude":-97.813301,
+    "latitude":30.2955,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78746,
+    "dataid":9937
+  },
+  {
+    "response_id":430,
+    "longitude":-97.813301,
+    "latitude":30.2955,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78746,
+    "dataid":9941
+  },
+  {
+    "response_id":393,
+    "longitude":-97.813301,
+    "latitude":30.2955,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78746,
+    "dataid":2149
+  },
+  {
+    "response_id":440,
+    "longitude":-97.822502,
+    "latitude":30.167801,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78748,
+    "dataid":9737
+  },
+  {
+    "response_id":391,
+    "longitude":-97.858704,
+    "latitude":30.2076,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78749,
+    "dataid":4213
+  },
+  {
+    "response_id":328,
+    "longitude":-97.866203,
+    "latitude":30.27,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78735,
+    "dataid":9933
+  },
+  {
+    "response_id":424,
+    "longitude":-97.894096,
+    "latitude":30.378401,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78732,
+    "dataid":8197
+  },
+  {
+    "response_id":452,
+    "longitude":-97.941002,
+    "latitude":30.712999,
+    "city":"Liberty Hill",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78642,
+    "dataid":5371
+  },
+  {
+    "response_id":341,
+    "longitude":-98,
+    "latitude":30.305401,
+    "city":"Austin",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78738,
+    "dataid":7510
+  },
+  {
+    "response_id":445,
+    "longitude":-98.905998,
+    "latitude":30.2481,
+    "city":"Fredericksburg",
+    "country":"United States",
+    "state":"TX",
+    "zip_code":78624,
+    "dataid":3538
+  }
+]

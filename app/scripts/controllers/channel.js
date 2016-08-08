@@ -12,11 +12,11 @@ angular.module('greenhouseApp')
 
     $scope.cid = $stateParams.cid;
 
-    var channelRef = new Firebase("https://greenhouse.firebaseio.com/users/" + $scope.user.id + "/channels/" + $scope.cid);
+    var channelRef = new Firebase("https://greenhouse.firebaseio.com/users/" + $stateParams.uid + "/channels/" + $scope.cid);
     $scope.channel = $firebase(channelRef);
 
     // create a reference to the first data series that is saved. TODO: add support for multiple series.
-    var dataRef = new Firebase("https://greenhouse.firebaseio.com/users/" + $scope.user.id + "/channels/" + $scope.cid + '/data')
+    var dataRef = new Firebase("https://greenhouse.firebaseio.com/users/" + $stateParams.uid + "/channels/" + $scope.cid + '/data')
       , series = {}
 
     $scope.data = {};

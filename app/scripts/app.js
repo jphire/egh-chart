@@ -63,6 +63,11 @@ var greenhouseApp = angular
             templateUrl: "views/channel.html",
             controller: "ChannelCtrl"
           })
+          .state('index.users.maps', {
+            url: "/:uid/maps",
+            templateUrl: "views/map.html",
+            controller: "MapCtrl"
+          })
           .state('index.users.settings', {
             url: "/:uid/settings",
             templateUrl: "views/settings.html",
